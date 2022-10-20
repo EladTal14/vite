@@ -2,11 +2,11 @@ FROM node
 
 WORKDIR /app
 
-COPY ./my-vue-app/package.json ./
-COPY ./my-vue-app/yarn.lock ./
+COPY ./frontend/package.json ./
+COPY ./frontend/yarn.lock ./
 
 RUN yarn install
 
-COPY ./my-vue-app ./
+COPY ./frontend ./
 
 CMD ["yarn", "dev"]
