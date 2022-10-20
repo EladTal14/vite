@@ -7,6 +7,6 @@ COPY ./my-vue-app/yarn.lock ./
 
 RUN yarn install
 
-COPY . ./
+COPY ./my-vue-app ./
 
 CMD ["yarn", "dev"]
